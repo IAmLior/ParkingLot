@@ -16,6 +16,7 @@ POST /exit?ticketId=1234
 Returns the license plate, total parked time, the parking lot id and the charge (based on 15 minutes increments).
 
 HTTP Calls examples:
+
 Ec2 deployment:
 
 curl --location --request POST 'http://ec2-54-164-126-200.compute-1.amazonaws.com:8080/entry?plate=3999&parkingLot=1
