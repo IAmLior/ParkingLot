@@ -26,8 +26,9 @@ async def exit(ticketId: str):
         raise HTTPException(status_code=404, detail="Ticket not found")
     
     time_parked = datetime.now() - record['entry_time']
-    hours_parked = time_parked.total_seconds() / 3600
-    charge = hours_parked * 2.5 
+    total_minutes_parked = time_parked.total_seconds() / 60
+    quarters_parked = (total_minutes_parked // 15) + (1 if total_minutes_parked % 15 > 0 else 0)
+    charge = quarters_parked * 2.5
     
     return {
         'plate': record['plate'],
