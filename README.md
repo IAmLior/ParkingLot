@@ -26,3 +26,9 @@ curl --location --request POST 'http://ec2-3-90-183-106.compute-1.amazonaws.com:
 curl --location --request POST 'https://f59ibsv8ii.execute-api.us-east-1.amazonaws.com/stage/entry?plate=999&parkingLot=1
 
 curl --location --request POST 'https://f59ibsv8ii.execute-api.us-east-1.amazonaws.com/stage/exit?ticketId=62496bfc-e174-4978-9f16-5427cf5af76f
+
+**Example**
+![image](https://github.com/IAmLior/ParkingLot/assets/156535224/36ab6fcc-d021-47d1-9ea2-f05a0db93bcd)
+
+
+
